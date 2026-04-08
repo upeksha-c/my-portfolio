@@ -216,10 +216,10 @@ function App() {
               <div className="skill-category-card text-center mb-5">
                 <div className="category-header justify-content-center mb-4">
                   <i className="bi bi-code-slash"></i>
-                  <h4>Programming Languages</h4>
+                  <h4>Programming Languages & Testing Frameworks</h4>
                 </div>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  {['JavaScript', 'TypeScript', 'Kotlin', 'C / C++', 'Python'].map((s, i) => (
+                  {['JavaScript', 'TypeScript', 'Kotlin', 'C programming', 'C++', 'Python', 'Java', 'Jest', 'Vitest'].map((s, i) => (
                     <div key={i} className="skill-chip">{s}</div>
                   ))}
                 </div>
@@ -232,7 +232,7 @@ function App() {
                   <h4>Frontend Development</h4>
                 </div>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  {['React.js', 'Bootstrap', 'Tailwind CSS', 'HTML/CSS'].map((s, i) => (
+                  {['React.js', 'Bootstrap', 'CSS', 'HTML'].map((s, i) => (
                     <div key={i} className="skill-chip">{s}</div>
                   ))}
                 </div>
@@ -258,7 +258,7 @@ function App() {
                   <h4>AI & Others</h4>
                 </div>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  {['OpenAI API', 'Cohere AI', 'GitHub Copilot', 'Jest / Vitest', 'AI-assisted Development'].map((s, i) => (
+                  {['OpenAI API', 'Cohere AI', 'GitHub Copilot', 'AI-assisted Development'].map((s, i) => (
                     <div key={i} className="skill-chip">{s}</div>
                   ))}
                 </div>
