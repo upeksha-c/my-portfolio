@@ -95,7 +95,7 @@ function App() {
 
     // Perform the actual download
     const link = document.createElement('a');
-    link.href = '/Upeksha_Gulegodage_CV.pdf';
+    link.href = import.meta.env.VITE_PUBLIC_URL + 'Upeksha_Gulegodage_CV.pdf';
     link.download = 'Upeksha_Gulegodage_CV.pdf';
     link.click();
   };
