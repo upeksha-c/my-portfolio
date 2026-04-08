@@ -258,7 +258,7 @@ function App() {
                   <h4>AI & Others</h4>
                 </div>
                 <div className="d-flex flex-wrap justify-content-center gap-3">
-                  {['OpenAI API', 'Cohere AI', 'GitHub Copilot', 'AI-assisted Development'].map((s, i) => (
+                  {['OpenAI API', 'Cohere AI', 'GitHub Copilot'].map((s, i) => (
                     <div key={i} className="skill-chip">{s}</div>
                   ))}
                 </div>
