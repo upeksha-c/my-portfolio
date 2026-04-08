@@ -1,0 +1,265 @@
+:root {
+  --accent: #57A6A1;
+}
+
+/* Themes */
+.dark-theme {
+  background-color: #240750;
+  color: #e0e0e0;
+}
+
+.dark-theme .navbar,
+.dark-theme .project-content {
+  background-color: #344C64;
+}
+
+.light-theme {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.light-theme .navbar,
+.light-theme .project-content {
+  background-color: #ffffff;
+}
+
+/* description */
+.hero-section {
+  background: linear-gradient(135deg, #240750, #344C64);
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.light-theme .hero-section {
+  background: linear-gradient(135deg, #577B8D, #57A6A1);
+}
+
+/* Profile image container */
+.profile-image-container {
+  width: 380px; 
+  height: 380px;
+  border: 8px solid #57A6A1;
+  transition: all 0.3s ease;
+}
+
+/* On mobile screens */
+@media (max-width: 768px) {
+  .profile-image-container {
+    width: 250px; 
+    height: 250px;
+    border-width: 5px; 
+  }
+}
+/* Project Cards */
+.project-card {
+  transition: all 0.4s ease;
+  border: none;
+  height: 100%;
+}
+
+.project-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 25px 50px -12px rgba(87, 166, 161, 0.4) !important;
+}
+
+/* Skill */
+.skill-category-card {
+  background: rgba(87, 123, 141, 0.15);
+  border-radius: 16px;
+  padding: 32px 28px;
+  margin-bottom: 28px;
+  transition: all 0.4s ease;
+  border: 1px solid rgba(87, 166, 161, 0.2);
+  text-align: center;
+}
+
+.skill-category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(87, 166, 161, 0.25);
+  background: rgba(87, 123, 141, 0.25);
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+
+.category-header i {
+  font-size: 2.1rem;
+  color: #57A6A1;
+}
+
+.category-header h4 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Skill Chips */
+.skill-chip {
+  background: linear-gradient(135deg, #577B8D, #57A6A1);
+  color: white;
+  padding: 12px 26px;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 15px;
+  box-shadow: 0 4px 15px rgba(87, 166, 161, 0.3);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.skill-chip:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(87, 166, 161, 0.5);
+}
+
+.language-chip {
+  background: linear-gradient(135deg, #344C64, #577B8D) !important;
+}
+
+/* Social Buttons */
+.social-btn {
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(87, 166, 161, 0.4);
+}
+
+.linkedin-btn { background: linear-gradient(135deg, #0a66c2, #0077b5); color: white; }
+.github-btn   { background: linear-gradient(135deg, #333, #24292f); color: white; }
+.cv-btn       { background: linear-gradient(135deg, #57A6A1, #344C64); color: white; }
+
+/* Carousel Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+}
+.carousel-control-prev {
+  left: -50px; 
+}
+.carousel-control-next {
+  right: -50px;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(87, 166, 161, 0.8);
+}
+
+@media (max-width: 1200px) {
+  .carousel-control-prev { left: 5px; }
+  .carousel-control-next { right: 5px; }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(2);
+}
+
+/* Modern Chip Styling for Project Links */
+.project-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  border-radius: 50px; 
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* GitHub Chip - Darker Professional Look */
+.github-chip {
+  background-color: #57A6A1; 
+  color: #ffffff !important;
+}
+
+/* Live Demo Chip - Using your brand Teal */
+.live-chip {
+  background-color: #57A6A1; 
+  color: #ffffff !important;
+}
+
+/* Hover Effects */
+.project-chip:hover {
+  transform: translateY(-3px); /* Subtle "lift" */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.1);
+  color: #ffffff !important;
+}
+
+/* Ensure they look good in Light Mode without changing colors */
+.light-theme .project-chip {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix for buttons in the project cards */
+.project-card .btn {
+  position: relative;
+  z-index: 10; /* Ensures they aren't covered by shadows/layers */
+}
+
+/* Ensure Live Demo button is visible in Light Mode */
+.light-theme .btn-outline-light, 
+.light-theme .btn-outline-info {
+  color: #344C64 !important;
+  border-color: #57A6A1 !important;
+}
+
+/* Add a min-height to the project content so they stay uniform */
+.project-content {
+  min-height: 250px;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: white !important;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.light-theme form input::placeholder,
+.light-theme form textarea::placeholder {
+  color: #6c757d !important; /* Standard muted grey for placeholders */
+  opacity: 1; /* Ensures the color shows clearly */
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: rgba(255, 255, 255, 0.25) !important;
+  border-color: #57A6A1 !important;
+  box-shadow: 0 0 0 0.3rem rgba(87, 166, 161, 0.3);
+}
+
+.light-theme form input,
+.light-theme form textarea {
+  color: #212529 !important;
+  background-color: #ffffff !important;
+  border: 1px solid #577B8D !important;
+}
